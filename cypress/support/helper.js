@@ -6,12 +6,16 @@ export function authorization(username = 'AntonDnipro5', password = 'TestPass1')
 }
 
 export function findProduct (targetSelector) {
+    cy.log('Search for products');
+    cy.get('#filter_keyword').type('E');
+    cy.get(' div [title="Go"]').click();
+
     cy.log('Locate the product');
     cy.get('.contentpanel').then($container => {
-        if ($container.find(targetSelector).length) {
-            cy.get(targetSelector).click()
+        if ($container.find(`[title="${targetSelector}"]`).length > 0) {
+            cy.get(`[title="${targetSelector}"]`).click()
         } else {
-            cy.log('product not found')
+            cy.get('.pagination li a').contains('>').click()
         }
     })
 }

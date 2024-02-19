@@ -14,10 +14,6 @@ describe('Order suite', () => {
 
         cy.log('check if the product is available');
 
-        cy.log('Search for products');
-        cy.get('#filter_keyword').type('E');
-        cy.get(' div [title="Go"]').click();
-
         findProduct(`[title = "Eye master"]`);
 
         cy.get('[class="bgnone"]').should('have.text', 'Eye master');
