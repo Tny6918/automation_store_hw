@@ -1,0 +1,16 @@
+{
+  "firstName": "Anton",
+  "lastName": "Savenko",
+  "email": "antony.saven5@gmail.com",
+  "telephone": "0963334455",
+  "fax": "380963334455",
+  "company": "Solvve",
+  "address1": "Shevchenko 1",
+  "address2": "Shevchenko 2",
+  "city": "Dnipro",
+  "postcode": "49000",
+  "countryId": "220",
+  "zoneId": "3484",
+  "username": "AntonDnipro5",
+  "password": "TestPass1"
+}
